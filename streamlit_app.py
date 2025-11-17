@@ -1,12 +1,12 @@
 import streamlit as st
-import clips
+import clipspy
 import logging 
 
 # Setup working environment
 logging.basicConfig(level=15, format='%(message)s')
 
-env = clips.Environemnt()
-router = clips.LoggingRouter()
+env = clipspy.Environemnt()
+router = clipspy.LoggingRouter()
 env.add_router(router)
 
 
